@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.app {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.event-blocks {
+  padding: 0px;
+}
+
+.event-blocks li {
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+.event-blocks li span {
+  margin-right: 10px;
+}
+
+.console {
+  padding: 5px;
+  background: black;
+  width: 400px;
+  height: 600px;
+  color: #23ff00;
+}
+
+.console li {
+  list-style-type: none;
+  padding: 2px 5px;
+}
+
+.console li::before {
+  content: "-";
+  margin-right: 5px;
+}
