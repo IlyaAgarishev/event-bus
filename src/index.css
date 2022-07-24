@@ -48,3 +48,17 @@ code {
   content: "-";
   margin-right: 5px;
 }
+
+.square {
+  padding: 20px 30px;
+  background: blue;
+}
+
+.square:hover {
+  background: red;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}

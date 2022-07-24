@@ -1,8 +1,8 @@
 enum EventsNames {
-  ButtonClicked = "ButtonClicked",
-  InputChanged = "InputChanged",
-  CheckEvent = "CheckEvent",
-  MouseOverSquare = "MouseOverSquare",
+  ButtonIsClicked = "ButtonIsClicked",
+  InputIsChanged = "InputIsChanged",
+  IsChecked = "IsChecked",
+  MouseIsOverSquare = "MouseIsOverSquare",
 }
 
 type Subscribtion = (data: any) => void;
@@ -35,7 +35,7 @@ class EventBus {
     };
   }
 
-  public emit(eventName: EventsNames, data: any) {
+  public emit(eventName: EventsNames, data?: any) {
     this.events[eventName]?.forEach((func) => {
       func.call(null, data);
     });
