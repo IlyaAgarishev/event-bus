@@ -1,4 +1,3 @@
-import "./App.css";
 import Console from "./Console";
 import EventBlocks from "./EventBlocks";
 
