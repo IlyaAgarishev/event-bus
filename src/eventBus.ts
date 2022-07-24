@@ -1,8 +1,5 @@
 enum EventsNames {
-  ButtonIsClicked = "ButtonIsClicked",
-  InputIsChanged = "InputIsChanged",
-  IsChecked = "IsChecked",
-  MouseIsOverSquare = "MouseIsOverSquare",
+  PhoneCall = "PhoneCall",
 }
 
 type Subscribtion = (data: any) => void;

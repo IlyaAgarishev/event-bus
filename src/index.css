@@ -1,0 +1,19 @@
+.app {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  align-items: center;
+}
+
+.recording-voice-message,
+.phone-call-event {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  color: green;
+  font-size: large;
+  border: 2px solid green;
+}
