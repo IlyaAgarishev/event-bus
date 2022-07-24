@@ -13,7 +13,13 @@ const RecordingVoiceMessage = (props?: any) => {
   console.log("RecordingVoiceMessage is rendered");
 
   return (
-    <div className="recording-voice-message">
+    <div
+      className="recording-voice-message"
+      style={{
+        color: recordingVoiceMessage ? "green" : "grey",
+        border: recordingVoiceMessage ? "2px solid green" : "2px solid grey",
+      }}
+    >
       Recording a voice message is {recordingVoiceMessage ? "on" : "off"}
     </div>
   );
