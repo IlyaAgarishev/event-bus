@@ -15,7 +15,7 @@ class EventBus {
     this.events = {};
   }
 
-  public subscribe(eventName: EventsNames, subscribtion: Subscribtion) {
+  public subscribe<T>(eventName: EventsNames, subscribtion: (data: T) => void) {
     if (!this.events[eventName]) {
       this.events[eventName] = new Set();
     }
@@ -32,7 +32,7 @@ class EventBus {
     };
   }
 
-  public emit(eventName: EventsNames, data?: any) {
+  public emit<T>(eventName: EventsNames, data?: T) {
     this.events[eventName]?.forEach((func) => {
       func.call(null, data);
     });
