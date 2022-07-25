@@ -17,10 +17,12 @@ const RecordingVoiceMessage = (props?: any) => {
       className="recording-voice-message"
       style={{
         color: recordingVoiceMessage ? "green" : "grey",
-        border: recordingVoiceMessage ? "2px solid green" : "2px solid grey",
+        border: recordingVoiceMessage ? "5px solid green" : "5px solid grey",
       }}
     >
-      Recording a voice message is {recordingVoiceMessage ? "on" : "off"}
+      <h1>
+        Recording a voice message is {recordingVoiceMessage ? "on" : "off"}
+      </h1>
     </div>
   );
 };
