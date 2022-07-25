@@ -5,6 +5,10 @@
   width: 100%;
 }
 
+.recording-voice-message {
+  margin-right: 10px;
+}
+
 .recording-voice-message,
 .phone-call-event {
   display: flex;
